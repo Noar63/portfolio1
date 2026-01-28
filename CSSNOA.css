@@ -1,0 +1,213 @@
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    line-height: 2; 
+    color: #333; 
+    background-color: #9f9e9e; 
+}
+
+/* Conteneur centralisé avec une largeur maximale */
+.conteneur {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Style pour les sections principales */
+.section {
+    padding: 2rem 0; 
+    background: #fff; 
+    margin: 1rem 0; 
+    border-radius: 5px; 
+}
+
+/* Grille pour organiser les projets */
+.grille {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Colonnes adaptatives */
+    gap: 1rem; 
+    margin-top: 1rem; 
+}
+
+/* Style des cartes de projet */
+.carte {
+    background: #eaeaea; 
+    padding: 1rem; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+/* Couleur du titre des cartes de projet */
+.carte h3 {
+    margin-top: 0; 
+    color: #333; 
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #333; 
+    padding: 10px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+}
+
+/* Style pour le texte "Portfolio" dans la navbar */
+.navbar .logo {
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+/* Menu dans la navbar */
+.navbar .menu {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+}
+
+/* Espacement entre les éléments du menu */
+.navbar .menu li {
+    margin: 0 15px;
+}
+
+/* Liens du menu */
+.navbar .menu li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: color 0.3s ease; 
+    font-weight: bold; 
+}
+
+/* Changement de couleur des liens au survol */
+.navbar .menu li a:hover {
+    color: #00bcd4;
+}
+
+/* Modification de l'image dans la section #entrer */
+#entrer img{
+    max-width: 150px; 
+    height: auto;
+    border-radius: 50px; 
+}
+
+/* Modification de l'image dans la section #experience */
+#experience img{
+    float: right;
+    margin: 20px;
+    max-width: 250px; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+#formation img{
+    float: right;
+    margin: 20px;
+    border-radius: 8px; 
+}
+
+/* Modification de la couleur des titres h3 */
+h3{
+    color: #076792;
+}
+
+/* Style pour la barre de progression */
+progress {
+    border: 3px solid #ccc;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+/* Permet de changer la couleur à l'interieur des navbar */
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3; 
+}
+
+/* Permet de changer la couleur du pourcentage inscrit à l'interieur des navbar */
+progress::-webkit-progress-value {
+    background-color: #076792; 
+}
+
+/*Ajuste la photo de la catégorie football*/
+.foot{
+    float: left;
+    margin: 20px;
+    max-width: 200px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Placement des photos pour la partie portfolio et la partie voyage */
+.conteneurvoyage,
+.web{
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    height: auto;
+}
+
+/* Régler la taille des photos des voyages */
+.grece,
+.Espagne,
+.portugal{
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px; 
+}
+
+/* Effet de zoom au survol pour les photos suivantes*/
+.grece:hover,
+.Espagne:hover,
+.portugal:hover,
+.foot:hover,
+.schema:hover,
+.html:hover,
+.css:hover,
+.carte:hover
+{
+    transform: scale(1.3); 
+    transition: all 0.5s ease-in-out; 
+}
+
+/* pour la section #entrer celle en haut de la page juste en bas du menu */
+#entrer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Centrer les titres des schémas */
+figure{
+    text-align: center;
+}
+
+/* Ajustement des tailles pour la photo du CSS dans la partie portfolio */
+.css{
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Ajustement des tailles pour ces 2 photos */
+.html,
+.schema{
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Taille pour le texte avec "*" en dessous des jauges compétences techniques*/
+#jauges{
+    font-size: 12px;
+}
+
+
